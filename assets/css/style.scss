@@ -1,0 +1,445 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+//@import url('https://fonts.googleapis.com/css?family=Open%20Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+//
+// // Core variables and mixins
+ @import "bootstrap/variables";
+@import "bootstrap/mixins";
+//
+// // Reset and dependencies
+// @import "bootstrap/normalize";
+// @import "bootstrap/print";
+// @import "bootstrap/glyphicons";
+//
+// // Core CSS
+// @import "bootstrap/scaffolding";
+// @import "bootstrap/type";
+// @import "bootstrap/code";
+// @import "bootstrap/grid";
+// @import "bootstrap/tables";
+// @import "bootstrap/forms";
+// @import "bootstrap/buttons";
+//
+
+// Colors
+$primary: #e5261f;
+$primary-dark: #a01b16;
+$secondary: #f88379;
+$black: #2f2f41;
+$white: #ffffff;
+$white-offset: #fff6f8;
+$steel: #5c5a5a;
+
+
+.footer-dark {
+    color: #E5D283;
+    text-align: center;
+    background-color: #213555;
+    // background-size:1100px 270px;
+     background-size:600px 200px;
+    // background-size:1100px 513px;
+    background-position: center top;
+  }
+
+  // Footer
+  $footer-background-color: $primary;
+  $footer-text-color: $white;
+  $sub-footer-background-color: darken($primary, 10%);
+  $sub-footer-text-color: $white;
+
+.page-header {
+  color: #F0F0F0;
+  text-align: center;
+  background-color: #213555;
+  // background-image: url("/images/page-header.jpg");
+   background-image: url("/assets/img/header_USP.png");
+  background-size:1100px 270px;
+//   background-size:600px 200px;
+//  background-image: url("/images/ECVP_logo_HR.gif");
+  background-repeat: no-repeat;
+  // background-size:1100px 513px;
+  background-position: center center;
+    @include large {
+     padding: 0.5rem 1rem; // default: 5, 6
+     background-size:1000px ;
+     //background-position: center top;
+    }
+
+   @include medium {
+     padding: 1.5rem 4rem; // default: 3, 4
+     background-size:1000px ;
+     //background-position: center top;
+    }
+
+   @include small {
+     padding: 0.5rem 1rem; // default: 2, 1
+     background-size:500px;
+     margin-bottom: 0rem;
+     background-position: center 50px  ;
+    }
+  }
+
+  .project-tagline {
+    margin-bottom: 2rem;
+    font-weight: normal;
+    opacity: 0.7;
+
+    @include large {
+      font-size: 1.25rem;
+      margin-top: 5.7rem;
+    }
+
+    @include medium {
+      font-size: 1.0rem;
+      margin-top: 4.6rem;
+    }
+
+    @include small {
+      font-size: 1rem;
+      //margin-top: 2.5rem;
+      margin-top: 0rem;
+      padding: 0rem 3rem;
+      line-height: 18px;
+    }
+  }
+
+  // .project-name {
+  //   margin-top: 0;
+  //
+  //
+  //   @include large {
+  //     font-size: 3.25rem;
+  //     margin-bottom: 7.5rem; // default: 0.1
+  //   }
+  //
+  //   @include medium {
+  //     font-size: 2.25rem;
+  //     margin-bottom: 6rem; // default: 0.1
+  //   }
+  //
+  //   @include small {
+  //     font-size: 1.75rem;
+  //     margin-bottom: 7.5rem; // default: 0.1
+  //   }
+  // }
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color:#213555;
+    font-family: 'Merriweather';
+    //background-color: #F0F0F0;
+}
+
+
+.grid {
+  display: flex;
+   grid-auto-rows: 100px;
+  align-items: center;
+  justify-self: end;
+  column-count: 6;
+  grid-gap: 50px;
+  border-radius: 5px;
+ }
+.col-small {
+  flex-grow: 1;
+}
+.col-big {
+  flex-grow: 10;
+}
+
+
+.doublecolumn {
+  display: flex;
+  align-items: center;
+  column-count: 2;
+  grid-gap: 50px;
+}
+
+
+// #keynotespeaker {
+//   display:block;
+//   height: 200px;
+//   width: 200px;
+//   margin-left: auto;
+//   margin-right: auto
+// }
+
+#navitem {
+  @include large {
+  font-size: 22px;
+  }
+
+  @include medium {
+  font-size: 22px;
+  }
+  @include small {
+  font-size: 20px;
+  }
+}
+
+#keynotespeaker {
+  height: 200px;
+  width: 200px;
+  float: right;
+}
+
+#keynotespeaker_l {
+  height: 200px;
+  width: 250px;
+  padding-right: 50px;
+  float: left;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+    color:#000000;
+    background-color:#F0F0F0;
+    font-family: 'Open Sans Light';
+    font-style: light;
+    font-size: 16px;
+    font-weight: bold;
+    .light {
+        font-weight: 300;
+    }
+    .regular {
+        font-weight: 400;
+    }
+    .bold {
+      //  font-weight: 600;
+        font-family:'Open Sans';
+        font-style: bold;
+    }
+    //font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    //font-family: 'Castoro', serif;
+    //font-family: 'Padauk', sans-serif;
+    //font-family: 'Crimson Text', serif;
+    //font-size: 16px;
+}
+/* Set paragraph text to be bold. */
+p {
+  font-weight: bold;
+}
+span {
+  font-weight: 1000;
+  font-family:'Open Sans';
+}
+/* Set div text to two steps heavier than
+   normal but less than a standard bold. */
+div {
+  font-weight: 800;
+  font-family:'Open Sans';
+}
+
+/* Set span text to be one step lighter
+   than its parent.
+span {
+  font-weight: lighter;
+} */
+
+
+//body {
+//  background: white;
+//  height: 0vh;
+//  font-family: 'open sans light';
+//  font-style: light;
+//  color: black;
+//  line-height: 1.8;
+//  letter-spacing: 1px;
+//  margin-top: 1rem;
+//}
+
+.social-icon {display: inline-block; margin: 0 10px}
+
+.footer {
+  background: #E5D283;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  .footer-title {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-family: 'Open Sans';
+    font-weight: bold;
+    margin-bottom: 0px;
+
+  }
+//mark {
+//      color:#000000;
+//      background: white;
+//      font-weight: 800;
+//      font-family:'Open Sans';
+//      font-style: bold;
+//  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    .bold {
+        font-weight: 600;
+        font-family:'Open Sans';
+        font-style: bold;
+    }
+    li {
+      color: $footer-text-color;
+      font-size: 1rem;
+      a {
+        color: $footer-text-color;
+        text-decoration: none;
+  //      padding: 12px 14px 12px 0;
+        display: block;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    }
+  }
+
+
+.sub-footer {
+  background: #213555; //#4F709C lighter blue
+  color:$white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+  .sub-footer-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+  .copyright {
+    margin-top: 10px;
+    font-size: 14px;
+    a {
+      font-weight: bold;
+      color: $white;
+    }
+  }
+  .social {
+    a:first-of-type {
+      margin-left: -10px;
+    }
+  }
+}
+
+/* temp accordion-content
+/* accordion-like-structure incl details and summary */
+details {    /* text */
+  width: 100%;
+  margin: 0 auto ;
+  background: white;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+  font-size: 17px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+summary {       /* button */
+  padding: 15px;
+  display: block;
+  background-color: #f2e8c0; /*  $sub-footer-background-color:  */
+  padding-left: 1rem;
+  position: relative;
+  cursor: pointer;
+  font-size: 18px;
+}
+summary:hover {
+  background-color: #E5D283; /*lighten(#4F709C, 20);*/
+}
+
+
+summary:before {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 1px;
+}
+
+/* THE MAGIC 🧙‍♀️ */
+details[open] > summary:before {
+/*  transform: rotate(90deg); */
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+details > ul {
+  padding-bottom: 1rem;
+  margin-bottom: 0;
+}
+
+/////////////////////////////////////////
+
+
+/*-.container {
+  width: 100%
+  max-width: 600px
+  margin: 50px auto
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+/*button.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+/*button.active, button.accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+/*button.accordion-content {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  display: none;
+  transition: max-height 0.2s ease-out;
+}
+
+button.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+/*  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+button.active:after {
+  content: "\2796"; } /* Unicode character for "minus" sign (-) */
