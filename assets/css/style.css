@@ -821,27 +821,43 @@ a {
   background-position: center top; }
 
 .page-header {
-  color: #F0F0F0;
   text-align: center;
   background-color: #213555;
-  background-image: url("/assets/img/header_USP.png");
-  background-size: 1100px 270px;
+  background-image: url("/assets/img/HEADERv2.png");
   background-repeat: no-repeat;
   background-position: center center; }
   @media screen and (min-width: 64em) {
     .page-header {
-      padding: 0.5rem 1rem;
-      background-size: 1000px; } }
+      padding: 6rem 7rem;
+      background-size: 1000px;
+      background-position: center center; } }
   @media screen and (min-width: 42em) and (max-width: 64em) {
     .page-header {
-      padding: 1.5rem 4rem;
-      background-size: 1000px; } }
+      padding: 3rem 4rem;
+      background-size: 650px;
+      background-position: center center; } }
   @media screen and (max-width: 42em) {
     .page-header {
-      padding: 0.5rem 1rem;
-      background-size: 500px;
+      padding: 3rem 3rem;
+      background-size: 550px;
       margin-bottom: 0rem;
-      background-position: center 50px; } }
+      background-position: center center; } }
+
+.logo {
+  background: left/cover url("/assets/img/header_USP_logo.png");
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+  font: bold calc(1em + 2 * (100vw - 120px) / 100) "Dancing Script", fantasy;
+  color: #213555;
+  text-shadow: #000 2px 2px 0.2rem; }
+
+header > h1 {
+  margin-bottom: 0; }
+
+header > time {
+  font: italic 0.7rem sans-serif; }
 
 .project-tagline {
   margin-bottom: 2rem;
@@ -917,21 +933,14 @@ body {
   line-height: 1.8;
   color: #000000;
   background-color: #F0F0F0;
-  font-family: 'Open Sans Light';
+  font-family: 'Open Sans';
   font-style: light;
   font-size: 16px;
-  font-weight: bold; }
-  body .light {
-    font-weight: 300; }
-  body .regular {
-    font-weight: 400; }
-  body .bold {
-    font-family: 'Open Sans';
-    font-style: bold; }
+  font-weight: lighter; }
 
 /* Set paragraph text to be bold. */
 p {
-  font-weight: bold; }
+  font-weight: 400; }
 
 span {
   font-weight: 1000;
