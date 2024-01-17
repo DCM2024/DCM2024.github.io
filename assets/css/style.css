@@ -839,19 +839,9 @@ a {
   @media screen and (max-width: 42em) {
     .page-header {
       padding: 3rem 3rem;
-      background-size: 550px;
+      background-size: 480px;
       margin-bottom: 0rem;
       background-position: center center; } }
-
-.logo {
-  background: left/cover url("/assets/img/header_USP_logo.png");
-  display: flex;
-  height: 120px;
-  align-items: center;
-  justify-content: center;
-  font: bold calc(1em + 2 * (100vw - 120px) / 100) "Dancing Script", fantasy;
-  color: #213555;
-  text-shadow: #000 2px 2px 0.2rem; }
 
 header > h1 {
   margin-bottom: 0; }
@@ -905,6 +895,12 @@ header > time {
   align-items: center;
   column-count: 2;
   grid-gap: 50px; }
+
+.quatrocolumn {
+  display: flex;
+  align-items: center;
+  column-count: 4;
+  grid-gap: 20px; }
 
 @media screen and (min-width: 64em) {
   #navitem {
@@ -1060,49 +1056,5 @@ details summary::-webkit-details-marker {
 
 details > ul {
   padding-bottom: 1rem;
+  padding-right: 1rem;
   margin-bottom: 0; }
-
-/*-.container {
-  width: 100%
-  max-width: 600px
-  margin: 50px auto
-}
-
-/* Style the buttons that are used to open and close the accordion panel */
-/*button.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  text-align: left;
-  border: none;
-  outline: none;
-  transition: 0.4s;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-/*button.active, button.accordion:hover {
-  background-color: #ccc;
-}
-
-/* Style the accordion panel. Note: hidden by default */
-/*button.accordion-content {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  display: none;
-  transition: max-height 0.2s ease-out;
-}
-
-button.accordion:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-/*  font-size: 13px;
-  color: #777;
-  float: right;
-  margin-left: 5px;
-}
-
-button.active:after {
-  content: "\2796"; } /* Unicode character for "minus" sign (-) */
