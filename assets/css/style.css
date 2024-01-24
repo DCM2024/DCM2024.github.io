@@ -840,7 +840,7 @@ a {
   @media screen and (max-width: 42em) {
     .page-header {
       padding: 3rem 3rem;
-      background-image: url("/assets/img/HEADERv4.png");
+      background-image: url("/assets/img/HEADERv3.png");
       background-size: 350px;
       background-position: center center; } }
 
