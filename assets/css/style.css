@@ -823,23 +823,25 @@ a {
 .page-header {
   text-align: center;
   background-color: #213555;
-  background-image: url("/assets/img/HEADERv2.png");
   background-repeat: no-repeat;
   background-position: center center; }
   @media screen and (min-width: 64em) {
     .page-header {
+      background-image: url("/assets/img/HEADERv2.png");
       padding: 6rem 7rem;
       background-size: 1000px;
       background-position: center center; } }
   @media screen and (min-width: 42em) and (max-width: 64em) {
     .page-header {
+      background-image: url("/assets/img/HEADERv2.png");
       padding: 3rem 4rem;
       background-size: 650px;
       background-position: center center; } }
   @media screen and (max-width: 42em) {
     .page-header {
       padding: 3rem 3rem;
-      background-size: 480px;
+      background-image: url("/assets/img/HEADERv3.png");
+      background-size: 250px;
       margin-bottom: 0rem;
       background-position: center center; } }
 
